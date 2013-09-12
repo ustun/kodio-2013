@@ -1,0 +1,45 @@
+@mixin border-radius($radius: 6px) {
+    -webkit-border-radius: $radius !important;
+    -moz-border-radius: $radius !important;
+    -ms-border-radius: $radius !important;
+    -o-border-radius: $radius !important;
+    border-radius: $radius !important;
+}
+
+@mixin retina($file, $type, $width, $height) {
+    background-image: url($file + '.' + $type);
+    background-position: center center;
+    background-repeat: no-repeat;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url($file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+      -moz-background-size: $width $height;
+      -o-background-size: $width $height;
+    }
+  }
+  background-size: $width $height;
+}
+
+@mixin text-shadow($x:2px, $y:2px, $blur:4px, $opacity:0.75) {
+    text-shadow: $x $y $blur rgba(0, 0, 0, $opacity);
+}
+@mixin opacity($opacity: 0.5) {
+    -webkit-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    -moz-opacity: $opacity;
+    opacity: $opacity;
+    $opperc: $opacity * 100;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=$opperc);
+    filter: alpha(opacity=$opperc);
+}
+
+@mixin glass-bg {
+  background: transparent url('/public/images/black-50.png') left top;
+  @include border-radius(16px);
+}

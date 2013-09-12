@@ -1,0 +1,316 @@
+// debugging purpose....
+@for $i from 0 through 6 {
+  .dbg#{$i+1} { background-color: darken(yellow, 3 * $i); }
+}
+
+body {
+  font-family: 'Noticia Text', serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: inherit;
+    margin: 0;
+  }
+}
+
+
+.img-responsive-free {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: {
+    top: 20px;
+    bottom: 50px;
+  }
+  padding-bottom: 20px;
+  border-bottom: 4px solid lighten(black, 50%);
+}
+
+.btn-inverse {
+  background-color: black;
+  color: white;
+  &:hover {
+    background-color: $color-2;
+    color: white;
+  };
+}
+
+.block {
+  padding: {
+    top: 50px;
+  }
+//  background-color: #eee;
+}
+
+// header -------------------------------------------------------------------------
+.block-header {
+  background: #000 url('/public/images/header-she-is-istanbul.jpg') center center no-repeat;
+  background-size: cover;
+  h1 {
+    color: white;
+    margin: {
+      top: 10px;
+      bottom: 10px;
+    };
+  }
+  h2 {
+    color: $color-5;
+  }
+  h3 {
+    color: $color-2;
+  }
+}
+
+#kodio-date-information {
+  padding: 20px;
+  height: 200px;
+  text-align: right;
+  @include glass-bg;
+}
+// header -------------------------------------------------------------------------
+
+
+// speakers -----------------------------------------------------------------------
+.block-speakers {
+  background-color: $color-1;
+  a {
+    color: $color-3;
+    &:hover { color: lighten($color-3, 10%); };
+  }
+  h2 {
+    color: lighten($color-4, 30%);
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.speaker {
+  min-height: 300px;
+  margin-bottom: 80px;
+  text-align: center;
+  .bio {
+    padding: 10px;
+    font-size: 1.25em;
+    color: darken($color-5, 30%);
+  }
+  .links {
+    a {
+      color: $color-2;
+      &:hover { color: lighten($color-2, 10%); };
+    }
+    i {
+      font-size: 3em;
+      margin: 0 10px;
+    }
+  }
+}
+
+.avatar {
+  width: 232px;
+  height: 232px;
+  margin: 0px auto;
+  border: 16px solid $color-2;
+  @include border-radius(50%);
+}
+
+.avatar-mattt-thompson {
+  @include retina("/public/images/speakers/mattt-thompson", "jpg", 100%, 100%);
+}
+
+.avatar-sinan-yasar {
+  @include retina("/public/images/speakers/sinan-yasar", "jpg", 100%, 100%);
+}
+
+.avatar-blake-mizerany {
+  @include retina("/public/images/speakers/blake-mizerany", "jpg", 100%, 100%);
+}
+
+.avatar-andrew-gerrand {
+  @include retina("/public/images/speakers/andrew-gerrand", "jpg", 100%, 100%);
+}
+
+.avatar-cihan-okyay {
+  @include retina("/public/images/speakers/cihan-okyay", "jpg", 100%, 100%);
+}
+
+.avatar-mark-bates {
+  @include retina("/public/images/speakers/mark-bates", "jpg", 100%, 100%);
+}
+
+.avatar-taylan-pince {
+  @include retina("/public/images/speakers/taylan-pince", "jpg", 100%, 100%);
+}
+
+.avatar-joshua-ballanco {
+  @include retina("/public/images/speakers/joshua-ballanco", "jpg", 100%, 100%);
+}
+.avatar-baris-daylik {
+  @include retina("/public/images/speakers/baris-daylik", "jpg", 100%, 100%);
+}
+// speakers -----------------------------------------------------------------------
+
+
+.btn-big {
+  border: none;
+  font-size: 1.9em;
+  padding: 6px 50px;
+  
+}
+
+// tickets ------------------------------------------------------------------------
+.block-tickets {
+  background-color: $color-5;
+  color: black;
+  text-align: center;
+  font-size: 1.6em;
+  i {
+    font-size: 2em;
+    margin: 0 10px;
+  }
+  h2 {
+    font-size: 2em;
+    color: white;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: $color-2;
+  }
+  p {
+    margin: 40px;
+  }
+}
+
+.ticket-standart {
+  .btn-big {
+    background-color: $color-4;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $color-4;
+    };
+  }
+}
+
+.ticket-exclusive {
+  .btn-big {
+    background-color: $color-2;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $color-2;
+    };
+  }
+}
+
+.tickets-divider {
+  background: transparent url('/public/images/5-1px.png') center top repeat-y;
+}
+// tickets ------------------------------------------------------------------------
+
+
+// logos --------------------------------------------------------------------------
+.block-brands {
+  text-align: center;
+  .logos {
+    margin-bottom: 60px;
+    img {
+        margin: 40px;
+    }
+  }
+}
+// logos --------------------------------------------------------------------------
+
+
+// time-table ---------------------------------------------------------------------
+.block-time-table {
+  background-color: $color-3;
+  color: white;
+  .section-title {
+    border-color: white;
+  }
+}
+// time-table ---------------------------------------------------------------------
+
+
+// location -----------------------------------------------------------------------
+.block-location {
+  text-align: center;
+  background-color: #121316;
+  color: white;
+  .section-title {
+    border-color: white;
+  }
+  address {
+    font-size: 2em;
+  }
+}
+
+#google-map {
+  width: 100%;
+  height: 500px;
+}
+// location -----------------------------------------------------------------------
+
+
+// footer -------------------------------------------------------------------------
+.block-footer {
+  padding-top: 0;
+  padding-bottom: 50px;
+  background: transparent url('/public/images/footer-she-is-istanbul.jpg') center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  a {
+    color: $color-2;
+    &:hover { color: lighten($color-3, 10%); };
+  }
+  span {
+    @include glass-bg;
+    padding: 20px;
+    font-size: 2em;
+    display: inline-block;
+  }
+}
+// footer -------------------------------------------------------------------------
+
+// triangles ----------------------------------------------------------------------
+.triangle {
+  z-index: 1000;
+  padding-bottom: 82px + 50px;
+}
+
+.triangle-header {
+  background: transparent url('/public/images/triangle-header.png') center bottom no-repeat;
+}
+
+.triangle-speakers {
+  background: transparent url('/public/images/triangle-speakers.png') center bottom no-repeat;
+}
+
+.triangle-tickets {
+  background: transparent url('/public/images/triangle-tickets.png') center bottom no-repeat;
+}
+
+.triangle-brands {
+  background: transparent url('/public/images/triangle-brands.png') center bottom no-repeat;
+}
+
+.triangle-time-table {
+  background: transparent url('/public/images/triangle-time-table.png') center bottom no-repeat;
+}
+
+.triangle-footer {
+  padding-top: 82px + 50px;
+  background: transparent url('/public/images/triangle-footer.png') center top no-repeat;
+}
+// triangles ----------------------------------------------------------------------

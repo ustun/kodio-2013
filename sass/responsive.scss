@@ -1,0 +1,123 @@
+@media (min-width: 320px) and (max-width: 579px) {
+  @for $i from 0 through 12 {
+    .col-xs-#{$i+1} { width: 100%; }
+  }
+  
+  .block {
+//    background: #ddf;
+  }
+  .block-header {
+    text-align: center;
+  }
+  #kodio-date-information {
+    text-align: inherit;
+    margin-top: 20px;
+    height: auto;
+    h1 { font-size: 18px;}
+    h2 { font-size: 16px;}
+    h3 { font-size: 14px;}
+  }
+
+  .block-tickets {
+    i {
+      font-size: 1.2em;
+    }
+    p {
+      margin: {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .ticket {
+    margin-bottom: 100px;
+  }
+  
+  .block-brands {
+    .logos {
+        margin-bottom: 80px;
+        img {
+          display: block;
+          max-width: 80%;
+          margin: 40px auto;
+        }
+    }
+  }
+  
+  .block-location {
+    address {
+      font-size: 1.2em;
+    }
+  }
+  
+  #google-map {
+    padding: 20px;
+  }
+  
+  .block-footer {
+    span {
+      padding: 5px;
+      font-size: 1em;
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ticket {
+    margin-bottom: 100px;
+  }
+  .tickets-divider {
+    background: none;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 767px) {
+  h1 { font-size: 20px;}
+  h2 { font-size: 18px;}
+  h3 { font-size: 14px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 { font-size: 26px;}
+  h2 { font-size: 22px;}
+  h3 { font-size: 18px;}
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .speaker {
+    h2 {
+      font-size: 20px;
+      min-height: 40px;
+    }
+    .bio {
+      font-size: 15px;
+    }
+  }
+  .block-tickets {
+    i {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .block-header {
+    padding: {
+      top: 150px;
+    }
+  }
+  .block-footer {
+    padding-bottom: 200px;
+  }
+  
+  .triangle-footer {
+    padding-top: 82px + 150px;
+  }
+  
+  .triangle-header {
+    padding-bottom: 82px + 150px;
+  }
+}
