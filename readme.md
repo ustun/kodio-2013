@@ -5,7 +5,7 @@ Official website. [http://kod.io](http://kod.io)
 
 ## How to run?
 
-```ruby
+```sh
 bundle install --path vendor/bundle
 rake
 ```
