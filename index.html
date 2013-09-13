@@ -21,8 +21,35 @@
     <link rel="apple-touch-icon-precomposed" href="/public/images/icons/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/public/images/icons/favicon.ico">
   </head>
-  <body>
-      <div class="block block-header">
+  <body data-spy="scroll" data-target="#fixed-navbar">
+      
+      <nav id="fixed-navbar" class="navbar navbar-inverse navbar-fixed-top navbar-centered" role="navigation">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <div class="container">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#nav-home">Home</a></li>
+                      <li><a href="#nav-speakers">Speakers</a></li>
+                      <li><a href="#nav-tickets">Tickets</a></li>
+                      <li><a href="#nav-sponsors">Sponsors</a></li>
+                      <li><a href="#nav-time-table">Time Table</a></li>
+                      <li><a href="#nav-location">Location</a></li>
+                      <li><a href="http://twitter.com/kod_io"><i class="icon-twitter"></i></a></li>
+                      <li><a id="nav-eml" href="#"><i class="icon-envelope"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+      
+      <div id="nav-home" class="block block-header">
           <div class="triangle triangle-header">
               <div class="container">
                   <div class="row">
@@ -43,7 +70,7 @@
       </div>
       
       
-      <div class="block block-speakers">
+      <div id="nav-speakers" class="block block-speakers">
           <div class="triangle triangle-speakers">
               <div class="container">
                   <div class="row">
@@ -143,7 +170,7 @@
           </div>
       </div>
       
-      <div class="block block-tickets">
+      <div id="nav-tickets" class="block block-tickets">
           <div class="triangle triangle-tickets">
               <div class="container">
                   <div class="row">
@@ -180,7 +207,7 @@
           </div>
       </div>
       
-      <div class="block block-brands">
+      <div id="nav-sponsors" class="block block-brands">
           <div class="triangle triangle-brands">
             <div class="container">
                 <div class="row">
@@ -238,7 +265,7 @@
           </div>
       </div>
       
-      <div class="block block-time-table">
+      <div id="nav-time-table" class="block block-time-table">
           <div class="triangle triangle-time-table">
               <div class="container">
                   <div class="row">
@@ -251,7 +278,7 @@
           </div>
       </div>
       
-      <div class="block block-location">
+      <div id="nav-location" class="block block-location">
           <div class="triangle">
               <div class="container">
                   <div class="row">

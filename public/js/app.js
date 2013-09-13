@@ -13,6 +13,11 @@ $(document).ready(function(){
     window.location.href="mailto:" + t2 + "?subject=contact";
   });
   
+  $("#nav-eml").click(function(e){
+    e.preventDefault();
+    window.location.href="mailto:" + t2 + "?subject=contact";
+  });
+  
   $(".speaker a, .logos a, .block-footer a").attr("target", "_blank");
 });
 

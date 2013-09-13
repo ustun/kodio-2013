@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Noticia Text', serif;
+  padding-top: 51px;
 }
 
 a:hover {
@@ -322,3 +323,9 @@ a:hover {
   background: transparent url('/public/images/triangle-footer.png') center top no-repeat;
 }
 // triangles ----------------------------------------------------------------------
+
+
+#fixed-navbar {
+    background: black;
+}
+
