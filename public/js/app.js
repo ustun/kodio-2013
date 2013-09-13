@@ -19,6 +19,16 @@ $(document).ready(function(){
   });
   
   $(".speaker a, .logos a, .block-footer a").attr("target", "_blank");
+  
+  $("#fixed-navbar a").click(function(e){
+    if($(this).attr("href")[0] == "#"){
+      e.preventDefault();
+      var y = $($(this).attr("href")).offset().top;
+      $('html, body').stop().animate({
+        "scrollTop": y -($("#fixed-navbar").height() - 50)
+        }, 600);
+    }
+  });
 });
 
 
