@@ -43,6 +43,18 @@
         }
     }
   }
+  .time-table-info {
+    @include border-radius(0px);
+    margin-left: 0;
+    img {
+      float: none !important;
+      display: block !important;
+      margin: 0 auto 20px auto !important;
+    }
+  }
+  .time-table-info:before {
+    content: none;
+  }
   
   .block-location {
     address {
@@ -78,6 +90,20 @@
   h1 { font-size: 20px;}
   h2 { font-size: 18px;}
   h3 { font-size: 14px;}
+  .time-table-info {
+    margin-left: 20px;
+  }
+  .time-table-info:before {
+    left: 15px;
+  };
+}
+
+@media (min-width: 580px) and (max-width: 991px) {
+  .time-table-time,
+  .time-table-icon {
+    font-size: 1.4em;
+    margin-top: 22px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

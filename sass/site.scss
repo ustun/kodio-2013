@@ -247,7 +247,61 @@ a:hover {
   .section-title {
     border-color: white;
   }
+  h2 {
+    color: $color-3;
+    margin: 0;
+  }
+  h3 {
+    color: darken($color-5, 20%);
+    margin: 0;
+  }
+  p {
+    color: black;
+    font-size: 1.3em;
+    margin-top: 20px;
+  }
+  ul {
+    color: black;
+    font-size: 1.3em;
+  }
+  .row {
+    margin-bottom: 40px;
+  }
+  a {
+    color: $color-3;
+    &:hover { color: lighten($color-3, 20%); }
+  }
 }
+
+.time-table-time,
+.time-table-icon {
+  font-size: 2em;
+  margin-top: 14px;
+}
+
+.time-table-icon {
+  text-align: center;
+}
+
+.time-table-info {
+  @include clearfix;
+  background-color: $color-1;
+  padding: 20px;
+  margin-left: 5px;
+  @include border-radius;
+}
+.time-table-info:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 26px;
+  border: solid transparent;
+  border-width: 10px;
+  border-right-color: $color-1;
+};
+
 // time-table ---------------------------------------------------------------------
 
 

@@ -43,3 +43,14 @@
   background: transparent url('/public/images/black-50.png') left top;
   @include border-radius(16px);
 }
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
