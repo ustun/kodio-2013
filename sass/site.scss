@@ -193,6 +193,10 @@ a:hover {
   p {
     margin: 40px;
   }
+  a {
+    color: #555;
+    &:hover { color: lighten(#555, 10%) };
+  }
 }
 
 .ticket-standart {
