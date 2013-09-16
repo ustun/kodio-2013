@@ -126,6 +126,10 @@ a:hover {
   @include border-radius(50%);
 }
 
+.avatar-chris-stephenson {
+  @include retina("/public/images/speakers/chris-stephenson", "jpg", 100%, 100%);
+}
+
 .avatar-mattt-thompson {
   @include retina("/public/images/speakers/mattt-thompson", "jpg", 100%, 100%);
 }
